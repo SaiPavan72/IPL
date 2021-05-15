@@ -1,0 +1,23 @@
+<form action="/teams/save_player/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+
+    first Name<input type="text" name="player_fname"><br>
+    last Name<input type="text" name="player_lname"><br>
+    image<input type="file" name="player_image"><br>
+    player jersey number <input type="number" name="jersey_number"><br>
+    player country<input type="text" name="jersey_number"><br>
+    team:
+     <select name="team">
+    {% for each in team %}
+        <option value={{each.1}}>{{each.1}}</option>
+    {% endfor %}
+</select><br>
+    total_matches<input type="number" name="total_matches"><br>
+    total_runs<input type="number" name="total_runs"><br>
+    hundreds<input type="number" name="hundreds"><br>
+    half_centuries<input type="number" name="half_centuries"><br>
+    highest_score<input type="number" name="highest_score"><br>
+<!--    {{form.as_p}}-->
+    <input type="submit" value="submit">
+
+</form>

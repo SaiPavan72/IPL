@@ -1,0 +1,10 @@
+{% if error %}
+{{error}}
+{% endif %}
+
+{% for team in teams %}
+<a href="/team/{{team.0}}/team_players/"> {{team.1}}</a><br>
+{% endfor%}
+<br>
+<br>
+<a href="/team/add_player/">Add players</a>

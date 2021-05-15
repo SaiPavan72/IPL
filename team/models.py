@@ -25,6 +25,4 @@ class Players(models.Model):
     def __str__(self):
         return self.player_fname
 
-class Matches_points(models.Model):
-    team_matches=models.Textfield(max_length=250)
-    points=models.IntegerField()
+
