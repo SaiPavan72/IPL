@@ -21,8 +21,21 @@ class Players(models.Model):
     hundreds=models.IntegerField(default=0)
     half_centuries=models.IntegerField(default=0)
     highest_score=models.IntegerField(default=0)
+    total_wickets = models.IntegerField(default=0)
+    highest_wickets = models.IntegerField(default=0)
 
     def __str__(self):
         return self.player_fname
+
+
+
+class Match(models.Model):
+    date = models.DateField()
+    time = models.TimeField()
+    team1 = models.ForeignKey(Team, on_delete=models.CASCADE, related_name='team_one')
+    team2 = models.ForeignKey(Team, on_delete=models.CASCADE, related_name='team_two')
+    team1_score = models.IntegerField()
+    team2_score = models.IntegerField()
+    result = models.CharField(max_length=50, null=True, blank=True)
 
 
