@@ -30,3 +30,9 @@ def save_player(request):
             return render(request, 'team/addplayer.html', {'form': PlayersForm(), 'error': form_obj.errors})
 
     return HttpResponseRedirect('/team/')
+
+
+def team_players(request,id):
+    import pdb
+    list = Players.objects.filter(team__id=id)
+    return render(request, 'team/playerlist.html', {'list': list})

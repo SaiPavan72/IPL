@@ -1,12 +1,34 @@
-<marquee><h1>IPL 2021 CHAMPIONSHIP</h1></marquee>
+<marquee><h1>VIVO IPL 2021</h1></marquee>
 <body bgcolor="full skyblue">
 {% if error %}
 {{error}}
 {% endif %}
 
-{% for team in teams %}
-<a href="/team/{{team.0}}/team_players/"> {{team.1}}</a><br>
-{% endfor%}
+<!--{% for team in teams %}-->
+<!--<a href="/team/{{team.0}}/team_players/"> {{team.1}}</a><br>-->
+<!--{% endfor%}-->
+<!--<br>-->
+<!--<br>-->
+<table border="2">
+    <thead>
+    <tr>
+        <th>logo</th>
+        <th>Team Name</th>
+        <th>state</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for team in teams %}
+
+    <tr>
+        <td><img src="{{ team.2 }}" height="50" width="50"></td>
+        <td><a href="/team/{{team.0}}/team_players/">{{team.1}}</a></td>
+        <td>{{team.3}}</td>
+    </tr>
+{% endfor %}
+    </tbody>
+</table>
 <br>
 <br>
+
 <a href="/team/add_player/">Add players</a>
