@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="756a7396-943b-418c-9b0a-d1d3b98b1f42" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/team/templates/team/points.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/team/templates/team/points_table.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team/templates/team/playerinfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/team/templates/team/playerinfo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team/templates/team/teamslist.html" beforeDir="false" afterPath="$PROJECT_DIR$/team/templates/team/teamslist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/team/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/team/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/team/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/team/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
